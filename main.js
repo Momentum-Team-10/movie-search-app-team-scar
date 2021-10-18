@@ -1,5 +1,6 @@
 const root = document.getElementById('root');
 const form = document.getElementById('inputForm')
+const url = "http://localhost:3000/movies"
 
 //event listener for submit button 
 form.addEventListener("submit", (e) => {
@@ -7,10 +8,24 @@ form.addEventListener("submit", (e) => {
     console.log(document.getElementById('inputField').value);
     const inputField = document.getElementById('inputField').value;
     createMovie(inputField);
+    form.reset();
 })
 //create movie notecard - POST info to JSON
 function createMovie(input) {
-
+    fetch(url, {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' }
+        body: JSON.stringify({
+            title: input,
+            added_at: moment().format() 
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        renderMoviecard(data)
+    }
+    )
 }
 
 //edit feature 
