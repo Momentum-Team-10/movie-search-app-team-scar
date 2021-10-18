@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>Movie Search</title>
 </head>
 <body id='root'>
     <h1>Movie Search</h1>
     <div class='container'>
         <form id='inputForm'>
-            <input id='inputField' type="text">
-        </form>
+            <input id='inputField' type="text" required>
+            <button id="submit" type="submit"> Submit</button>
+    </form>
+    </div>
+    <div id='resultsContainer'>
+        <ul id="movieList"></ul>
     </div>
 </body>
 </html>
