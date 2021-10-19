@@ -1,80 +1,9 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Citizen Kane",
-      "watched": false,
-      "created_at": "Monday, November 30th 2020, 8:19 am"
-    },
-    {
-      "title": "test",
-      "added_at": "2021-10-19T09:47:36-04:00",
-      "id": 2
-    },
-    {
-      "title": "some text",
-      "added_at": "2021-10-19T10:09:29-04:00",
-      "id": 3
-    },
-    {
-      "title": "asdsadasdasd",
-      "added_at": "2021-10-19T10:33:23-04:00",
-      "id": 4
-    },
-    {
-      "title": "fdghdfghd",
-      "added_at": "2021-10-19T10:52:34-04:00",
-      "id": 5
-    },
-    {
-      "title": "vbxb",
-      "added_at": "2021-10-19T10:55:41-04:00",
-      "id": 6
-    },
-    {
-      "title": "fghds",
-      "added_at": "2021-10-19T10:56:30-04:00",
-      "id": 7
-    },
-    {
-      "title": "23r2q34fe",
-      "added_at": "2021-10-19T10:56:56-04:00",
-      "id": 8
-    },
-    {
-      "title": "ghjdfty",
-      "added_at": "2021-10-19T10:57:00-04:00",
-      "id": 9
-    },
-    {
-      "title": "dfgesf",
-      "added_at": "2021-10-19T11:05:11-04:00",
-      "id": 10
-    },
-    {
-      "title": "sdfg",
-      "added_at": "2021-10-19T11:05:14-04:00",
-      "id": 11
-    },
-    {
-      "title": "asdf",
-      "added_at": "2021-10-19T11:06:15-04:00",
-      "id": 12
-    },
-    {
-      "title": "d",
-      "added_at": "2021-10-19T11:06:24-04:00",
-      "id": 13
-    },
-    {
-      "title": "etghret",
-      "added_at": "2021-10-19T11:06:31-04:00",
-      "id": 14
-    },
-    {
-      "title": "trhrethertherthrtherterthert",
-      "added_at": "2021-10-19T11:06:46-04:00",
-      "id": 15
+      "title": "test button",
+      "added_at": "2021-10-19T14:25:07-04:00",
+      "id": 16
     }
   ]
 }
