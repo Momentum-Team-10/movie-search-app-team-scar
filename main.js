@@ -48,7 +48,7 @@ function renderCardContents(li, cardText) {
     <p>${cardText.title}</p>
     <p>Added on ${moment(cardText.added_at).format("MMM DD, YYYY")}</p>
 <form> 
-<input type="radio" id="${cardText.title}">
+<input style='-webkit-appearance: radio' type="radio" id="${cardText.title}">
 <label>  Click if Watched </label>
 </form>
 <i class="deleteButton fas fa-trash-alt" ></i >
@@ -81,11 +81,12 @@ function deleteMovie(movieCard) {
 }
 
 function editMovie(movieCard) {
+    const input = document.getElementById("inputField").value
     fetch(url + "/" + `${movieCard.parentElement.id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            title: movieCard,
+            title: input,
         })
     })
         .then((res) => res.json())
