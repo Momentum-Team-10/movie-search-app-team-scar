@@ -42,6 +42,12 @@ renderCardContents(movieItem,movieInfo);
 movieList.appendChild(movieItem);
 console.log(movieInfo)
 }
+function renderCardContents(li, cardText) {
+    li.innerHTML = `
+    <p>${cardText.title}</p>
+    <p>${moment(cardText.added_at).format('MMM DD, YYYY')}</p>
+    `
+}
 
 
 //movie card button features 
