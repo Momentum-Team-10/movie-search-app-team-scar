@@ -5,6 +5,16 @@
       "title": "Citizen Kane",
       "watched": false,
       "created_at": "Monday, November 30th 2020, 8:19 am"
+    },
+    {
+      "title": "test",
+      "added_at": "2021-10-19T09:47:36-04:00",
+      "id": 2
+    },
+    {
+      "title": "some text",
+      "added_at": "2021-10-19T10:09:29-04:00",
+      "id": 3
     }
   ]
 }

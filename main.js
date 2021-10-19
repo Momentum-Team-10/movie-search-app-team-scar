@@ -1,6 +1,8 @@
 const root = document.getElementById('root');
-const form = document.getElementById('inputForm')
-const url = "http://localhost:3000/movies"
+const form = document.getElementById('inputForm');
+const url = "http://localhost:3000/movies";
+const movieList = document.getElementById('movieList');
+
 
 //event listener for submit button 
 form.addEventListener("submit", (e) => {
@@ -14,10 +16,10 @@ form.addEventListener("submit", (e) => {
 function createMovie(input) {
     fetch(url, {
         method: "POST",
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            title: input,
-            added_at: moment().format() 
+        title: input,
+        added_at: moment().format()
         })
     })
     .then(response => response.json())
@@ -33,5 +35,13 @@ function createMovie(input) {
 //true/false button to say whether or not it has been watched
 
 //render movie card text and buttons/dates (title, watched-true/false, added_at-moment, watched_at-moment)
+function renderMoviecard(movieInfo) {
+const movieItem = document.createElement("li");
+movieItem.id = movieInfo.id;
+renderCardContents(movieItem,movieInfo);
+movieList.appendChild(movieItem);
+console.log(movieInfo)
+}
 
-//
+
+//movie card button features 
