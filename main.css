@@ -1,3 +1,27 @@
-input[type="radio"]{
-    -webkit-appearance: radio !important;
+#root {
+  background-color: aqua;
+  justify-content: center;
+}
+
+.movieCard {
+  background-color: blueviolet;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+#movieList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#inputField {
+  width: 300px;
+}
+
+#inputForm,
+h1 {
+  margin-left: 40px;
 }

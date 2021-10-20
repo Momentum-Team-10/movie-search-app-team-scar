@@ -38,6 +38,7 @@ function createMovie(input) {
 
 function renderMovieCard(movieInfo) {
   const movieItem = document.createElement("li");
+  movieItem.classList.add("movieCard")
   movieItem.id = movieInfo.id;
   renderCardContents(movieItem, movieInfo);
   movieList.appendChild(movieItem);
