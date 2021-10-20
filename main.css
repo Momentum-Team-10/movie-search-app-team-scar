@@ -1,5 +1,5 @@
 #root {
-    font-family: Oswald, sans-serif;;
+    font-family: Oswald, sans-serif;
     color: #153B50;
     background-color: #ECEBE4;
     justify-content: center;
@@ -28,11 +28,18 @@
     margin-left: 40px;
   }
   
-  .button {
+  button {
     background-color: #153B30 !important;
+    
   }
   
-  .editButton:hover, .deleteButton:hover {
+  button:hover {
+    background-color: #429ea6;
+
+  }
+  
+  .editButton:hover, .deleteButton:hover{
     color: #429ea6;
   
   }
+
